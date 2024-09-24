@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D REPRESENTATION OF FLATS - MJ ICON LORDSWAY LAXMI (MOTWANI CONSTRUCTIONS)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: red;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+            background-color: #f8d7da;
+        }
+
+        .tab {
+            overflow: hidden;
+            background-color: #007bff;
+            display: flex;
+            justify-content: center;
+        }
+
+        .tab button {
+            background-color: inherit;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 20px;
+            transition: 0.3s;
+            font-size: 18px;
+            color: white;
+            margin: 5px;
+        }
+
+        .tab button:hover {
+            background-color: #0056b3;
+        }
+
+        .tab button.active {
+            background-color: #004085;
+            font-weight: bold;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-top: none;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .tabcontent img {
+            width: 80%;
+            max-width: 800px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .watermarked-image {
+            position: relative;
+            display: inline-block;
+            width: 80%;
+            max-width: 800px;
+            margin-bottom: 20px;
+        }
+
+        .watermarked-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .watermarked-image .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            color: rgba(255, 255, 255, 0.5);
+            font-weight: bold;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+        }
+
+        /* FinLoans logo positioning */
+        .logo {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 200;
+        }
+
+        .logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        .flats-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .flat {
+            width: 45%;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .flat a {
+            text-decoration: none;
+            color: #2C3E50;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .flat a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<h1>3D REPRESENTATION OF FLATS - MJ ICON LORDSWAY LAXMI (MOTWANI CONSTRUCTIONS)</h1>
+
+<div class="tab">
+    <button class="tablinks" onclick="openTab(event, '3DView')" id="defaultOpen">3D View of Apartment</button>
+    <button class="tablinks" onclick="openTab(event, 'ProjectDetails')">Project Details</button>
+    <button class="tablinks" onclick="openTab(event, 'FloorPlans')">Floor Plans</button>
+    <button class="tablinks" onclick="openTab(event, 'Flats')">Flats</button>
+    <button class="tablinks" onclick="openTab(event, 'Amenities')">Amenities</button>
+    <button class="tablinks" onclick="openTab(event, 'PhaseDetails')">Phase Details</button>
+    <button class="tablinks" onclick="openTab(event, 'LocationMap')">Location Map</button>
+    <button class="tablinks" onclick="openTab(event, 'ConstructionUpdates')">Construction Site Updates</button>
+</div>
+
+<!-- Tab Contents -->
+<div id="3DView" class="tabcontent">
+    <h3>3D View of Apartment</h3>
+    <img src="3d1.jpg" alt="3D View 1">
+    <img src="3d2.jpg" alt="3D View 2">
+</div>
+
+<div id="ProjectDetails" class="tabcontent">
+    <h3>Project Details</h3>
+    <img src="projectdetails.jpg" alt="Project Details">
+</div>
+
+<div id="FloorPlans" class="tabcontent">
+    <h3>Floor Plans</h3>
+    <div class="watermarked-image">
+        <img src="floorplan1-2-3-4.jpg" alt="Floor Plans 1st-4th">
+        <div class="watermark">FinLoans.in</div>
+    </div>
+    <div class="watermarked-image">
+        <img src="5thfloorplan.jpg" alt="5th Floor Plan">
+        <div class="watermark">FinLoans.in</div>
+    </div>
+</div>
+
+<div id="Flats" class="tabcontent">
+    <h3>Flats</h3>
+    <div class="flats-row">
+        <div class="flat">
+            <a href="flat101-501.jpg" target="_blank">Flat 101-501</a>
+        </div>
+        <div class="flat">
+            <a href="flat102-502.jpg" target="_blank">Flat 102-502</a>
+        </div>
+        <div class="flat">
+            <a href="flat103-503.jpg" target="_blank">Flat 103-503</a>
+        </div>
+        <div class="flat">
+            <a href="flat104-504.jpg" target="_blank">Flat 104-504</a>
+        </div>
+        <div class="flat">
+            <a href="flat105-505.jpg" target="_blank">Flat 105-505</a>
+        </div>
+        <div class="flat">
+            <a href="flat106-506.jpg" target="_blank">Flat 106-506</a>
+        </div>
+    </div>
+</div>
+
+<div id="Amenities" class="tabcontent">
+    <h3>Amenities</h3>
+    <img src="amenities.jpg" alt="Amenities">
+</div>
+
+<div id="PhaseDetails" class="tabcontent">
+    <h3>Phase Details</h3>
+    <img src="phasedetails.jpg" alt="Phase Details">
+</div>
+
+<div id="LocationMap" class="tabcontent">
+    <h3>Location Map</h3>
+    <img src="locationmap.jpg" alt="Location Map">
+</div>
+
+<div id="ConstructionUpdates" class="tabcontent">
+    <h3>Construction Site Updates</h3>
+    <img src="cons1.jpg" alt="Construction Update 1">
+    <img src="cons2.jpg" alt="Construction Update 2">
+    <img src="cons3.jpg" alt="Construction Update 3">
+    <img src="cons4.jpg" alt="Construction Update 4">
+    <img src="cons5.jpg" alt="Construction Update 5">
+    <img src="cons6.jpg" alt="Construction Update 6">
+</div>
+
+<footer>
+    <p>For immediate booking, contact FinLoans:</p>
+    <p>Phone: <strong>98727603070</strong></p>
+    <p>Email: <strong>support@finloans.in</strong></p>
+</footer>
+
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Open 3D View tab by default
+    document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
+
